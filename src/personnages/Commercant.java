@@ -7,12 +7,9 @@ public class Commercant extends Humain {
 	}
 //	private int sommeExtorquer ;
 
-	public int seFaireExtorquer(int sommeExtorquer) {
-
-		if (getArgentPosseder() <= sommeExtorquer) {
-			parler("J'ai tout perdu! Le monde est trop injuste ... ");
-		}
-		return sommeExtorquer;
+	public int seFaireExtorquer() {
+		parler("J'ai tout perdu! Le monde est trop injuste ... ");
+		return getArgentPosseder();
 	}
 
 	public void recevoir(int argent) {
