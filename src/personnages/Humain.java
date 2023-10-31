@@ -9,7 +9,8 @@ public class Humain {
 	public Humain(String nom, String boissonFavorite , int argentPosseder) {
 		this.nom = nom ; 
 		this.boissonFavorite = boissonFavorite; 
-		this.argentPosseder = argentPosseder ; 
+		this.argentPosseder = argentPosseder ;
+		
 	}
 	
 	public String getNom () {

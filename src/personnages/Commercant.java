@@ -5,6 +5,7 @@ public class Commercant extends Humain {
 		super(nom, "thé", argentPosseder);
 
 	}
+	
 //	private int sommeExtorquer ;
 
 	public int seFaireExtorquer() {
