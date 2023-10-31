@@ -40,9 +40,13 @@ public class Humain {
 		parler("J'ai "+ argentPosseder + " sous en poche. Je vais pouvoir m'offrir "+ bien +" à "+ prix + " sous");
 		argentPosseder -= prix;
 		}
-		
 	}
-	
+	public int perdreArgent(int argentPerdu) {
+		return argentPosseder - argentPerdu;
+	}
+	public int gagnerArgent(int argentGagner) {
+		return argentPosseder+argentGagner;
+	}
 	
 	
 	
