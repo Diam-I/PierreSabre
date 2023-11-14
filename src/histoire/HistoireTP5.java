@@ -10,7 +10,7 @@ public class HistoireTP5 {
 		Yakuza yaku = new Yakuza("Yaku Le Noir", "whisky", 30, "Warsong"); 
 		Ronin roro=new Ronin("Roro","shochu",60); 
 		Samourai akimoto = new Samourai("Miyamoto","Akimoto","saké",80);
-
+		Traitre masaka = new Traitre("Miyamoto","Masaka","whisky",100);
 		
 		
 		
@@ -35,8 +35,18 @@ public class HistoireTP5 {
 //		akimoto.listerConnaissance();
 
 		
-		akimoto.boire("thé");
+//		akimoto.boire("thé);
 		
-
+		
+		masaka.faireLeGentil();
+		masaka.ranconner(kumi);
+		masaka.ranconner(chonin);
+		masaka.ranconner(marco);
+		akimoto.faireConnaissanceAvec(masaka);
+		masaka.ranconner(kumi);
+		masaka.faireConnaissanceAvec(yaku);
+		masaka.faireLeGentil();
+		masaka.faireConnaissanceAvec(roro);
+		
 	}
 }

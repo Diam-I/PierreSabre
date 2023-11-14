@@ -1,10 +1,9 @@
 package personnages;
 import java.util.Random;
 public class Traitre extends Samourai {
-	int niveauTraitise ; 
-	public Traitre (String seigneur , String nom , String boissonPreferer , int argentPosseder ,int niveauTraitrise) {
+	int niveauTraitise = 0 ; 
+	public Traitre (String seigneur , String nom , String boissonPreferer ,int argentPosseder) {
 		super(seigneur, nom, boissonPreferer, argentPosseder);
-		this.niveauTraitise = niveauTraitrise;
 	}
 	
 	public void ranconner (Commercant commercant) {
