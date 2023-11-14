@@ -20,13 +20,15 @@ public class Yakuza extends Humain {
 		int argentApresExtorquer = sommeExtorquer + getArgentPosseder();
 		parler("J'ai piqué les " + sommeExtorquer + " sous de " + victime.getNom() + ", ce qui me fait " + argentApresExtorquer
 				+ " sous dans ma poche ! Hi ! Hi !");
+		setArgentPosseder(argentApresExtorquer);
+		
 
 	}
 	public int perdre() {
 		int argentPerdu = getArgentPosseder();
 		perdreArgent(argentPerdu);
 		reputation -= 1 ;
-		System.out.println("J'ai perdi mon duel et mes "+argentPerdu+" sous, snif ... J'ai déshonoré le clan de "+ clan +".");
+		System.out.println("J'ai perdu mon duel et mes "+argentPerdu+" sous, snif ... J'ai déshonoré le clan de "+ clan +".");
 		return argentPerdu;
 	}
 	
